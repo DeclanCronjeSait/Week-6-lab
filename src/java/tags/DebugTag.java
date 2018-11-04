@@ -18,7 +18,6 @@ public class DebugTag extends TagSupport
     @Override
     public int doStartTag() throws JspException 
     {
-
         if(pageContext.getRequest().getParameter("debug") != null)
         {
             return EVAL_BODY_INCLUDE;
